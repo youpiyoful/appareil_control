@@ -10,8 +10,9 @@
                       [appareilStatus]="appareil.status"></app-appareil>
       </ul>
       <button class="btn btn-success"
-              [disabled]="!isAuth"
-              (click)="onFire()">Tout allumer</button>
+              (click)="onLightUp()">Tout allumer</button>
+      <button class="btn btn-danger"
+              (click)="onSwitchOff()">Tout éteindre</button>
     </div>
   </div>
 </div>
