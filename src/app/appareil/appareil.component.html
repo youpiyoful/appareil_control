@@ -4,6 +4,7 @@
   'list-group-item-danger': appareilStatus === 'éteint'
 }">
   <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Status : {{ getStatus() }}</h4>
+  <a [routerLink]="[id]" class="col-3">Détail</a>
   <button class="btn btn-success"
           *ngIf="appareilStatus === 'éteint'"
           (click)="onSwitch()">allumer</button>
